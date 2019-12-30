@@ -19,5 +19,6 @@ app.use(express.static("public"));
 
 // Here we introduce HTML routing to serve different HTML files
 require("./routes/html-routes.js")(app);
+require("./routes/api.js")(app);
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
